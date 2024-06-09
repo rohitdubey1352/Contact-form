@@ -94,6 +94,18 @@ span {
     color: hsl(169, 82%, 27%);
 }
 
+input[type=radio] {
+    width: 1.2rem;
+    height: 1.2rem;
+    accent-color: hsl(169, 82%, 27%);
+}
+
+input[type=checkbox] {
+    width: .9rem;
+    height: .9rem;
+    accent-color: hsl(169, 82%, 27%);
+}
+
 .name input,
 .emailAddress,
 .queryChild {
