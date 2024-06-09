@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <main>
+    <div class="box_container">
+      <form id="contactForm">
+        <h2>Contact Us</h2>
+        <div class="user">
+          <div class="name">
+            <label>First Name<span> *</span></label>
+            <input type="text" name="firstname" id="firstname">
+            <p class="error-message" id="fnameError"></p>
+          </div>
+          <div class="name">
+            <label>Last Name<span> *</span></label>
+            <input type="text" name="lastname" id="lastname">
+            <p class="error-message" id="lnameError"></p>
+          </div>
+        </div>
+        <div class="input">
+          <label>Email Address<span> *</span></label>
+          <input type="email" name="email" id="email" class="emailAddress">
+          <p class="error-message" id="emailError"></p>
+        </div>
+        <div class="input">
+          <label>Query Type<span> *</span></label>
+          <div class="query">
+            <div class="queryChild">
+              <input type="radio" name="queryType" value="General Enquiry">
+              <label>
+                General Enquiry
+              </label>
+            </div>
+            <div class="queryChild">
+              <input type="radio" name="queryType" value="Support Request">
+              <label>
+                Support Request
+              </label>
+            </div>
+          </div>
+          <p class="error-message" id="queryTypeError"></p>
+        </div>
+        <div class="input">
+          <label>Message<span> *</span></label>
+          <textarea id="message" name="message" rows="2" cols="90"></textarea>
+          <p class="error-message" id="messageError"></p>
+        </div>
+
+        <div class="checkBox">
+          <input type="checkbox" id="checkBox">
+          <label>I consent to being contacted by the team<span>*</span></label>
+          <p class="error-message" id="consentError"></p>
+        </div>
+
+        <button class="btn" type="submit" id="submit">
+          submit
+        </button>
+
+      </form>
+    </div>
+
+    <!-- Success Message -->
+    <div id="successModal" class="modal">
+      <div class="modal-content">
+        <div class="sent">
+          <img src="./assets/images/icon-success-check.svg" alt="sent">
+          <h2>Message sent!</h2>
+        </div>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="./contact.js"></script>
+</body>
+
+</html>
